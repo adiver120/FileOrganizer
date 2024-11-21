@@ -2,7 +2,7 @@ import os
 import shutil
 
 
-directory = r"C:\Users\Aditya\Desktop\folder"
+directory = r"D:\Users\Aditya\Desktop\folder"
 
 
 file_types={
@@ -18,7 +18,7 @@ def file_organizer(directory, file_types):
 
     #creating folders for file types
     for folder in file_types.keys():
-        os.makedirs(os.path.join(directory,folder), exist_ok=True)
+        os.makepdirs(os.path.join(directory,folder), exist_ok=True)
 
     #moving files to desired folders
     for file_name in os.listdir(directory):
@@ -35,7 +35,7 @@ def file_organizer(directory, file_types):
     print("Files have been organized")
 
 
-if __name__=="__main__":
+if __name__ == "__main__":
     file_organizer(directory, file_types)
 
 
